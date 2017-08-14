@@ -29,7 +29,8 @@ for i in range(len(spt)):
     plt.figure(figsize=(5, 3), dpi=80)
     
     #get those labels right
-    plt.title('XPS', fontsize=16)
+    sps = spt[i]
+    plt.title(str(sps[:-4]), fontsize=16)
     plt.xlabel('Binding Energy (eV)', fontsize=12)
     plt.ylabel('Intensity', fontsize=12)
     
@@ -65,3 +66,5 @@ for i in range(len(spt)):
     
     #save the plot
     plt.savefig(str(spt[i]) + ".png", dpi=240)
+    
+    plt.show()
