@@ -14,9 +14,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 #%matplotlib inline
 
-print("what directory are the files in?")
+print("what is the path for the data files? (e.g. /home/<your username>/Data/XPS ")
 name = input()
-os.chdir("/home/trevario/Documents/Labnotebook/XPS/" + str(name))
+os.chdir(str(name))
 
 
 spt = glob.glob("*.txt")
